@@ -1,0 +1,10 @@
+posts = [
+        {
+            'author': {'username': 'Valdo'},
+            'body': "Let's get started on our project work!"
+        },
+        {
+            'author': {'username': 'Naa'},
+            'body': 'I agree!'
+        }
+    ]

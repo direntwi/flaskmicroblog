@@ -1,2 +1,2 @@
 # Flask Blog
- A micro blog cretated using python and the flask framework
+ A micro blog created using python and the flask framework
