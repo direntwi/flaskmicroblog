@@ -1,12 +1,19 @@
 import sys
+import time
 
 sys.setrecursionlimit(1500)
 
-def factorial(n, a):
+def tailcall(n, a):
     if n == 0 or n == a:
         return a
     else:
-        return factorial(n-1, n*a)
+        return tailcall(n-1, n*a)
 
-print(factorial(1000,1))
+def main():
+    startTime = time.time()
+    ans = tailcall(1000, 1)
+    endTime = time.time()
+    print('Answer is ' + str(ans))
+    print('Runtime for tail call optimization is {}'.format(endTime - startTime))
 
+main()
